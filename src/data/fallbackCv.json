@@ -1,0 +1,221 @@
+{
+  "profile": {
+    "fullName": "Aditia Dika Putra Laksamana",
+    "preferredName": "Aditia Dika",
+    "editorialRole": "Data Scientist & AI Specialist",
+    "editorialTitle": "Transforming Complex Datasets into Actionable Intelligence.",
+    "bio": "An accomplished Information Systems graduate, I, Aditia Dika, am a dedicated professional targeting a challenging role in data science and artificial intelligence. My academic background and technical expertise position me as a promising data scientist committed to leveraging advanced analytical techniques to derive meaningful insights and drive strategic decision-making. With a comprehensive understanding of data manipulation, machine learning algorithms, and predictive modeling, I am enthusiastic about applying my skills to transform complex datasets into actionable intelligence for organizations. Excited to contribute as a collaborative team member, I am driven to make impactful contributions that directly drive business growth and technological innovation.",
+    "location": "Banjarbaru, Indonesia",
+    "email": "aditiadika256@gmail.com",
+    "phone": "0822-1887-0626",
+    "availabilityStatus": "Open for Data Science & AI Opportunities",
+    "pdfResumeUrl": "",
+    "githubUrl": "https://github.com",
+    "linkedinUrl": "https://linkedin.com",
+    "metrics": {
+      "gpaBachelor": 3.77,
+      "gpaAssociate": 3.83,
+      "yearsExperience": 2,
+      "certificationsCount": 4
+    }
+  },
+  "projects": [
+    {
+      "id": "brin-plant-health-cnn",
+      "title": "Chili Plant Health Classification via Multispectral Camera",
+      "slug": "chili-plant-health-multispectral-cnn",
+      "category": "Artificial Intelligence & Computer Vision",
+      "organization": "BRIN (Badan Riset dan Inovasi Nasional)",
+      "period": "September 2023 – November 2024",
+      "summary": "Sistem klasifikasi tingkat kesehatan tanaman cabai berbasis citra Normalized Difference Vegetation Index (NDVI) dan format RGN menggunakan arsitektur deep learning CNN-EfficientNetB3 untuk smart farming presisi.",
+      "highlights": [
+        "Pengumpulan data primer dan pemrosesan citra multispektral format RGN.",
+        "Pembuatan dan kurasi dataset citra tanaman cabai berbasis indeks vegetasi (NDVI).",
+        "Eksperimen pemodelan klasifikasi tingkat kesehatan tanaman menggunakan arsitektur CNN-EfficientNetB3.",
+        "Kolaborasi dengan tim IoT untuk integrasi modul inferensi AI di lapangan."
+      ],
+      "tags": ["Python", "TensorFlow", "Computer Vision", "CNN-EfficientNetB3", "NDVI", "IoT"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "hologramType": "crystal",
+      "order": 1,
+      "isFeatured": true
+    },
+    {
+      "id": "kpknl-dams-monitoring",
+      "title": "Daily Activity Monitoring System & Landing Page (DAMS)",
+      "slug": "kpknl-dams-monitoring-system",
+      "category": "Full-Stack Web Development",
+      "organization": "Kantor Pelayanan Kekayaan Negara dan Lelang (KPKNL) Bandung",
+      "period": "Januari – Juli 2022",
+      "summary": "Aplikasi dashboard pemantauan kinerja harian dan manajemen tugas internal instansi dengan pemodelan sistem terstruktur serta antarmuka modern yang responsif.",
+      "highlights": [
+        "Analisis kebutuhan pengguna dan permodelan proses bisnis menggunakan UML (Use Case, Activity, Class, Sequence) dan ERD.",
+        "Perancangan wireframe dengan Balsamiq dan prototype interaktif menggunakan Figma.",
+        "Pengembangan web application menggunakan PHP (CodeIgniter 4), JavaScript, Bootstrap, dan MySQL.",
+        "Deployment dan integrasi sistem ke hosting produksi."
+      ],
+      "tags": ["PHP", "CodeIgniter 4", "JavaScript", "MySQL", "Bootstrap", "Figma", "UML"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "hologramType": "cube",
+      "order": 2,
+      "isFeatured": true
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-brin-smart-farming",
+      "role": "Data Scientist",
+      "institution": "BRIN (Badan Riset dan Inovasi Nasional) – Bandung",
+      "department": "Research Collaboration Smart Farming & Precision Agriculture Projects",
+      "location": "Bandung, Indonesia",
+      "period": "September 2023 – November 2024",
+      "isCurrent": false,
+      "description": "Klasifikasi tingkat kesehatan tanaman menggunakan kamera multispektral berdasarkan Normalized Difference Vegetation Index (NDVI).",
+      "achievements": [
+        "Gathering requirement and collecting raw data.",
+        "Analyze and process image data with RGN format.",
+        "Create a dataset from processed data.",
+        "Analyze and modeling from processed data for classification using CNN based architecture.",
+        "Collaborate with IoT team to integrate all modules."
+      ],
+      "technologies": ["Python", "CNN", "NDVI", "Computer Vision", "IoT"],
+      "order": 1
+    },
+    {
+      "id": "exp-telkom-practicum-assistant",
+      "role": "Practicum Assistant",
+      "institution": "Faculty of Applied Science, Telkom University",
+      "department": "Laboratorium Sistem Informasi & Komputasi",
+      "location": "Bandung, Indonesia",
+      "period": "September 2022 – June 2024",
+      "isCurrent": false,
+      "description": "Membimbing mahasiswa dan mengampu modul praktikum Data Science-Python, Database-MySQL, Computer Architecture & Networks, Programming Algorithms-Python, dan Web Development-PHP.",
+      "achievements": [
+        "Preparing study materials, exam questions, and equipment.",
+        "Providing guidance for complex assignments and algorithmic logic.",
+        "Collaborating with lecturers and lab peers to achieve optimal learning outcomes.",
+        "Assisting students during hands-on practical lab sessions.",
+        "Assessing student progress, weekly reports, and final practical exams."
+      ],
+      "technologies": ["Python", "MySQL", "PHP", "Data Science", "Computer Networks"],
+      "order": 2
+    },
+    {
+      "id": "exp-kpknl-fullstack-dev",
+      "role": "Full-Stack Web Developer",
+      "institution": "Kantor Pelayanan Kekayaan Negara dan Lelang (KPKNL)",
+      "department": "Internal Office Operations & IT",
+      "location": "Bandung, Remote",
+      "period": "January – July 2022",
+      "isCurrent": false,
+      "description": "Mengembangkan performance dashboard dan task management untuk monitoring operasional internal kantor.",
+      "achievements": [
+        "Gathering user requirement for Landing Page and Monitoring Application KPKNL Bandung.",
+        "Analyze and modeling running business processes and proposals.",
+        "Analyze, modeling, and building the application with Use Case, Activity, UML, ER Diagram.",
+        "Designing wireframes using Balsamiq.",
+        "Designing mockup and prototype using Figma.",
+        "Developing the application using PHP, JS, Bootstrap (CodeIgniter 4), and MySQL database.",
+        "Integration and deployment using 3rd party hosting."
+      ],
+      "technologies": ["PHP", "CodeIgniter 4", "MySQL", "JavaScript", "Bootstrap", "Figma"],
+      "order": 3
+    }
+  ],
+  "educations": [
+    {
+      "id": "edu-bachelor-telkom",
+      "degree": "Bachelor of Information System (S1)",
+      "institution": "Telkom University",
+      "location": "Bandung, Indonesia",
+      "period": "2022 – 2024",
+      "gpa": "3.77",
+      "finalProject": {
+        "title": "Implementation Of CNN-EfficientNetB3 For Chili Plant Health Classification Based On Vegetation Index Images Using Multispectral Camera",
+        "domain": "Intelligence System Development / Precision Agriculture"
+      },
+      "order": 1
+    },
+    {
+      "id": "edu-associate-telkom",
+      "degree": "Associate of Information System (D3)",
+      "institution": "Telkom University",
+      "location": "Bandung, Indonesia",
+      "period": "2019 – 2022",
+      "gpa": "3.83",
+      "finalProject": {
+        "title": "Landing Page KPKNL Bandung In The Module Of Daily Activity Monitoring System (DAMS)",
+        "domain": "Full-Stack Web Development"
+      },
+      "order": 2
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-bnsp-data-science",
+      "name": "Associate Data Science",
+      "issuer": "BNSP (Badan Nasional Sertifikasi Profesi)",
+      "issueYear": 2023,
+      "credentialUrl": "",
+      "category": "Data Science",
+      "order": 1
+    },
+    {
+      "id": "cert-bnsp-junior-web-dev",
+      "name": "Junior Web Developer",
+      "issuer": "BNSP (Badan Nasional Sertifikasi Profesi)",
+      "issueYear": 2021,
+      "credentialUrl": "",
+      "category": "Web Development",
+      "order": 2
+    },
+    {
+      "id": "cert-coursera-ml",
+      "name": "Machine Learning Foundations: A Case Study Approach",
+      "issuer": "Coursera",
+      "issueYear": 2021,
+      "credentialUrl": "",
+      "category": "Machine Learning",
+      "order": 3
+    },
+    {
+      "id": "cert-oracle-ai-ml",
+      "name": "Artificial Intelligence with Machine Learning in Java",
+      "issuer": "Oracle Academy",
+      "issueYear": 2024,
+      "credentialUrl": "",
+      "category": "Artificial Intelligence",
+      "order": 4
+    }
+  ],
+  "skills": {
+    "hardSkills": [
+      {
+        "category": "Intelligence System & AI",
+        "items": ["Machine Learning", "Deep Learning", "Computer Vision", "CNN (EfficientNetB3)", "Predictive Modeling"]
+      },
+      {
+        "category": "Data Analytics & Processing",
+        "items": ["Data Mining", "Statistical Analysis", "Data Visualization", "NDVI Image Analytics", "RGN Processing"]
+      },
+      {
+        "category": "Programming & Databases",
+        "items": ["Python", "Java", "PHP", "JavaScript", "MySQL", "Firestore NoSQL"]
+      },
+      {
+        "category": "System & Business Analysis",
+        "items": ["BPMN", "Business Intelligence", "UML (Use Case, Activity, Class, Sequence)", "ERD", "Balsamiq", "Figma"]
+      }
+    ],
+    "softSkills": [
+      "Problem Solving",
+      "Critical Thinking",
+      "Communication",
+      "Team Coordination & Collaboration",
+      "Adaptability",
+      "Learner's Mindset"
+    ]
+  }
+}

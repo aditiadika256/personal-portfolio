@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F8FAE5;
+    color: #43766C;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: #76453B;
+    color: #F8FAE5;
+  }
+}
+
+/* Lenis Recommended Scroll Normalization */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Editorial Linework & Grain Texture Utilities */
+@layer utilities {
+  .editorial-border {
+    border: 1px solid rgba(177, 148, 112, 0.35);
+  }
+
+  .editorial-border-b {
+    border-bottom: 1px solid rgba(177, 148, 112, 0.35);
+  }
+
+  .editorial-border-t {
+    border-top: 1px solid rgba(177, 148, 112, 0.35);
+  }
+
+  .editorial-glass {
+    background: rgba(248, 250, 229, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .card-glass {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(177, 148, 112, 0.3);
+  }
+
+  /* Split Backgrounds for Left-Cards Layout */
+  .bg-split-paper {
+    background: linear-gradient(to left, #F8FAE5 50%, transparent 50%);
+  }
+  .bg-split-forest-dark {
+    background: linear-gradient(to left, #2A4E47 50%, transparent 50%);
+  }
+  .bg-split-paper-muted {
+    background: linear-gradient(to left, #F0F3D6 50%, transparent 50%);
+  }
+  .bg-split-forest-ultradark {
+    background: linear-gradient(to left, #1B332E 50%, transparent 50%);
+  }
+  .bg-split-forest {
+    background: linear-gradient(to left, #43766C 50%, transparent 50%);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(67, 118, 108, 0.3);
+  }
+
+  /* 3D Perspective & Spatial Showcase Utilities */
+  .perspective-1200 {
+    perspective: 1200px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+/* Holographic Laser Beam Scanning Animation */
+@keyframes hologramSweep {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.85;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+.hologram-scanline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(177, 148, 112, 0.9), rgba(118, 69, 59, 0.95), transparent);
+  box-shadow: 0 0 14px rgba(118, 69, 59, 0.8), 0 0 24px rgba(177, 148, 112, 0.5);
+  animation: hologramSweep 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAE5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B19470;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #43766C;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* No-scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
