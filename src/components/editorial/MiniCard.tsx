@@ -46,7 +46,7 @@ export const CARD_CONTENT = {
     text: "SYSTEM INITIALIZATION SEQUENCE"
   },
   cover: {
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80",
+    image: "/me.png",
     text: "SPATIAL PORTRAIT · ADITIA DIKA"
   },
   project: {

@@ -231,16 +231,9 @@ export const DeckPresentation: React.FC<DeckPresentationProps> = ({
            * ======================================================== */}
           <div 
             className="lg:col-span-7 relative flex flex-col items-center justify-center h-full min-h-[520px] select-none"
-            style={{
-              perspective: isMobile ? "1200px" : isTablet ? "1150px" : "1100px",
-              perspectiveOrigin: isMobile ? "50% 50%" : "45% 50%", // Natural balanced perspective
-            }}
           >
             <div
               className="relative w-full flex flex-col items-center justify-center"
-              style={{
-                transformStyle: "preserve-3d",
-              }}
             >
               {cardsData.map((card, i) => {
                 const relative = useTransform(vIndex, (v) => i - v);
@@ -249,12 +242,6 @@ export const DeckPresentation: React.FC<DeckPresentationProps> = ({
                 // Tuned spacing to match landscape cards (height ~330-370px)
                 const y = useTransform(relative, (r) => r * 280);
                 const x = useTransform(relative, (r) => r * -45 * pFactor); // moves along diagonal vanishing line
-                
-                // 3D Depth (Z-translation): Active card comes toward camera, inactive cards recede
-                const z = useTransform(relative, (r) => {
-                  const dist = Math.abs(r);
-                  return (50 - dist * 115) * pFactor;
-                });
                 
                 // Scale: active card is closest and most prominent (1.0), inactive scale down
                 const scale = useTransform(relative, (r) => {
@@ -283,31 +270,29 @@ export const DeckPresentation: React.FC<DeckPresentationProps> = ({
                   <motion.div
                     key={card.id}
                     onClick={() => scrollToSectionIndex(i)}
-                    className={`absolute w-[90vw] max-w-[420px] sm:max-w-none sm:w-[580px] lg:w-[640px] xl:w-[720px] 2xl:w-[760px] h-[210px] sm:h-[290px] lg:h-[330px] xl:h-[370px] 2xl:h-[390px] transition-all duration-300 cursor-pointer overflow-visible select-none`}
+                    className={`absolute w-[90vw] max-w-[420px] sm:max-w-none sm:w-[580px] lg:w-[640px] xl:w-[720px] 2xl:w-[760px] h-[210px] sm:h-[290px] lg:h-[330px] xl:h-[370px] 2xl:h-[390px] cursor-pointer overflow-visible select-none`}
                     style={{
                       x,
                       y,
-                      z,
                       scale,
                       opacity,
                       zIndex,
                       transformOrigin: "center center",
-                      transformStyle: "preserve-3d",
                     }}
                   >
                     {/* 1. TILTED CARD PANEL (Angled 3D Surface / Pedestal in cinematic perspective) */}
                     <motion.div
-                      className={`absolute inset-0 rounded-3xl overflow-hidden transition-all duration-300 ${
+                      className={`absolute inset-0 rounded-3xl overflow-hidden transition-[border-color,box-shadow,background-color] duration-300 ${
                         isCurrentActive
                           ? "border-2 border-[#E06D53] ring-4 ring-[#E06D53]/25 shadow-[-25px_40px_80px_rgba(0,0,0,0.7),0_15px_30px_rgba(224,109,83,0.3)] bg-gradient-to-br from-[#1E3329] via-[#14241D] to-[#0A130F]"
                           : "border border-white/20 hover:border-[#E06D53]/50 shadow-[-15px_25px_50px_rgba(0,0,0,0.6)] bg-slate-900"
                       }`}
                       style={{
+                        transformPerspective: isMobile ? 1200 : isTablet ? 1150 : 1100,
                         rotateX,
                         rotateY,
                         rotateZ,
                         transformOrigin: "center center",
-                        transformStyle: "preserve-3d",
                       }}
                     >
                       {/* Subtle 3D Surface Sheen */}
